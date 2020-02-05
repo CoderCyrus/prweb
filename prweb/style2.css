@@ -1,0 +1,25 @@
+h4{
+    font-size: 20px;
+    text-align : center;
+}
+#main{
+    background-color: lightgreen;
+    color: lightyellow;
+}
+
+td{
+    border-width: 1px;
+    border-color:#006400;
+    border-style: solid;
+}
+table{
+    border-width: 1px;
+    border-color:#006400;
+    border-style: solid;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

@@ -1,0 +1,15 @@
+body{   
+    text-align : center;
+   }
+h3{
+    font-size: 19px;
+    color: #32CD32;
+    margin: 5px;
+}
+input{
+    width: 100%;
+}
+#form{
+    display: inline-block ;
+    width: 300px;
+}

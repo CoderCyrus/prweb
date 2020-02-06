@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head><title>Exemple d'utilisation de javascript</title>
+</head> 
+<body>
+<form name="mon_formulaire"><input type="text"  value="" name="mon_champ_texte"/><input type="button" value="Saisir" onClick="PromptMessage()"/></form><script type="text/javascript">   function PromptMessage() {       var saisie = prompt("Saisissez votre texte :", "Texte par défaut")       if (saisie!=null) {           document.forms["mon_formulaire"].elements["mon_champ_texte"].value=saisie;       }   }</script>
+
+</body>
+</html>

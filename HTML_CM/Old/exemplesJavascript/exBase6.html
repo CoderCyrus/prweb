@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples de base Javascript</title>
+   <meta charset="UTF-8"/>
+   <script src="js/exemple04.js"></script>
+  </head>
+  <body>
+  <script> 
+  	// Création de la fonction
+	var monAffichage = creeAffichage("special1");
+  </script>
+  <!-- Appel de la fonction créée -->
+  <p id="special1" onclick='monAffichage("Du contenu tout frais !");' > Du contenu </p>
+  <!-- Création et appel en une seule ligne -->
+  <p id="special2" onclick='creeAffichage("special2")("Du contenu tout frais !");'> truc</p> 
+  <!-- Création et passage en paramètre en une seule ligne -->
+  <p id="special3" onclick='calculerEtAfficher(10, creeAffichage("special3")); '> truc2</p>
+  </body>
+</html>
+
+
+
+
+
+
+
+

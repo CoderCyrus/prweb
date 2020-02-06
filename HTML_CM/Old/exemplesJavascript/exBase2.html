@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples de base Javascript</title>
+   <meta charset="UTF-8"/>
+   <script>
+   	function afficher(id, message) { 
+		console.log("Message: " + message); 	
+		document.getElementById(id).innerHTML = message; 
+	} 
+  </script>
+  </head>
+  <body>
+  <div>
+ <a id="special1" onclick='afficher("special1", "<p>Du contenu !</p>");'> test1</a> 
+ <a id="special2" onclick='afficher("special2", "Un autre contenu.");'> test2</a>
+  </div>
+  </body>
+</html>

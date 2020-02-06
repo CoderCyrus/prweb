@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples Object</title>
+   <meta charset="UTF-8"/>
+	<script>
+	function makeFunctions() {
+		var arr = new Array();
+		for(var i=0;i<5;i++){
+			arr[i] = function(j) {
+				console.log(i+j); 
+			}
+		}
+		return arr;
+	}
+</script>
+</head>
+<body>
+<script>var f = makeFunctions(); </script>
+<p id ="answer" onclick="document.getElementById('answer').innerHTML = f[2](10);">
+Réponse ?
+</p>
+</body>
+</html>

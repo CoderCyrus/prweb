@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemple de page XHTML contenant du Javascript</title>
+   <meta charset="UTF-8"/>
+   <script type="text/javascript">
+     function fenetre() { alert('Message d’alerte dans une fonction.');}
+   </script>
+</head>
+	<body onload="alert('Message d’alerte généré à la fin du chargement.')">
+   <script type="text/javascript">
+     alert('Message d’alerte dans le corps du document.');
+   </script>
+   <p>
+    Ceci est le corps du document.
+    <a href="javascript:fenetre()">Message d’alerte</a>.
+   </p>
+  </body>
+ </html>

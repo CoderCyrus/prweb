@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples de base Javascript</title>
+   <meta charset="UTF-8"/>
+   <script> 
+	function somme() { 
+		var argv = somme.arguments; 
+		var argc = somme.arguments.length; 
+		var result = 0; 
+		for (var i = 0 ; i < argc ; i++) { 
+			result += argv[i]; 
+		} 
+		return result; 
+	} 
+   </script>
+  </head>
+  <body>
+  <!-- Appel de la fonction créée -->
+  <p onclick="document.getElementById('somme1').innerHTML=somme(1,2,3);"> somme(1,2,3) : <div id="somme1"></div></p>
+  <p onclick="document.getElementById('somme2').innerHTML=somme(2);"> somme(2) : <div id="somme2"></div></p>
+  </body>
+</html>
+
+
+
+
+
+
+
+

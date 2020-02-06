@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples Object</title>
+   <meta charset="UTF-8"/>
+   <script>
+  // déclaration d'un objet selon la syntaxe JSON
+	var monObjet = { 
+		"nom" : "Fred",
+		"age" : 28,
+		"afficher" : function(id) {
+			document.getElementById(id).innerHTML = this.nom+", "+this.age+" ans."; 
+		}
+	};
+</script>
+</head>
+<body>
+<p id="demo" onclick="monObjet.afficher('demo');">Qui suis-je ?</p>
+</body>
+</html>

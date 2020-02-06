@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples de base Javascript</title>
+   <meta charset="UTF-8"/>
+   <script> 
+   function externe() {
+	 var	a=7;
+	 var interne = function()
+	 {
+		alert(a); 
+	 }
+	a = 8;
+	return interne; 
+	}
+   </script>
+  </head>
+  <body>
+  <!-- Appel de la fonction créée -->
+  <p id="special1" onclick='externe()();' > affichage final ? </p>
+  </body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples Object</title>
+   <meta charset="UTF-8"/>
+  </head>
+<body>
+<script>
+function Voiture(marque, modele) {
+	this.marque = marque;
+	this.modele = modele;
+}
+Voiture.prototype.afficher = function() {
+	alert(this.marque + " " + this.modele);
+}
+var maVoiture = new Voiture("Ford", "Fiesta"); 
+
+console.log("--- Test 1 ---");
+for( var prop in maVoiture ) {
+	console.log( prop + ": " + maVoiture[prop] );
+}
+
+console.log("--- Test 2 ---");
+for( var prop in maVoiture ) {
+	if( maVoiture.hasOwnProperty(prop) ) {
+		console.log( prop + ": " + maVoiture[prop] );
+	}
+}
+</script>
+</body>
+</html>

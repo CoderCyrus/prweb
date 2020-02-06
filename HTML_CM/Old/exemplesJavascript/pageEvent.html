@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <head>
+  <title>Exemple de page HTML contenant du JavaScript</title>
+  <meta charset="UTF-8"/>
+  <script type="text/javascript">
+	function texte() { document.write("Texte généré."); }
+  </script>
+ </head>
+ <body>
+
+ 	<script type="text/javascript">
+    document.write("Vous pouvez mettre du code javascript dans le corps du document.");
+  	</script>
+  <p>
+Ou bien dans une fonction appelée en cliquant
+   <a href="Javascript:texte()">ici</a>,
+  </p>
+  <p>
+   ou en passant la souris au-dessus de
+   <a href="" onMouseOver="texte()">cela</a>...
+  </p>
+ </body>
+</html>

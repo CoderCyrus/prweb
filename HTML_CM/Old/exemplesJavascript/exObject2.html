@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples Object</title>
+   <meta charset="UTF-8"/>
+  </head>
+<body>
+<p id="demo"></p>
+<script>
+function Voiture(marque, modele) { 
+	this.marque = marque;
+	this.modele = modele;
+	this.afficher = function() {
+		return (this.marque + " " + this.modele); 
+	}
+}
+var maVoiture = new Voiture("Ford", "Fiesta"); 
+document.getElementById("demo").innerHTML = maVoiture.afficher(); 
+console.log(maVoiture.marque);
+</script>
+</body>
+</html>

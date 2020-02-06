@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples de base Javascript</title>
+   <meta charset="UTF-8"/>
+  </head>
+  <body>
+  <div>
+ <p id="special4" > test</p> 
+ <script>
+
+	(function(id, message) {
+
+		console.log("Message: " + message);
+
+    	document.getElementById(id).innerHTML = message;
+
+		}("special4", "Un dernier contenu."));
+  </script>
+  </div>
+  </body>
+</html>

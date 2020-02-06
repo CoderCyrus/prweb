@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <head>
+   <title>Exemples Object</title>
+   <meta charset="UTF-8"/>
+   <script src="js/voiture.js"></script>
+  </head>
+<body>
+<script>
+var maVoiture = new Voiture('Ford', 'Fiesta'); 
+</script>
+<p id="demo" onclick="
+document.getElementById('demo').innerHTML = maVoiture.afficher(); 
+console.log(maVoiture.marque);">Ma voiture</p>
+<script>
+	// Ajout de membre a posteriori
+	maVoiture.km = 8000;
+	maVoiture.rouler = function(distance) { 
+		this.km += distance;
+	}
+</script>
+<p><button onclick="alert(maVoiture['km']);">kilom&eacute;trage</button></p>
+</body>
+</html>

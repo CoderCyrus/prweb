@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <title>Items</title>
+    <script type="text/javascript" src="myScript.js"></script>
+</head>
+
+<body>
+    </script>
+    <h1>List of items</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:5%">Auction#</th>
+                    <th style="width:10%">Auction Type </th>
+                    <th style="width:10%">Seller</th>
+                    <th >Description</th>
+                    <th style="width:10%">Category</th>
+                    <th style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Computer</td>
+                    <td>JY Martin</td>
+                    <td>I sell my computer, 3 years old</td>
+                    <td></td>
+                    <td class="centered">
+                        <img src="delete.png" style="display:inline;" onClick="deleteLine(this);"/>
+                        <img src="edit.png" style="display:inline;" onClick="editLine(this);"/>
+                        <img src="save.png" style="display:none;" onClick="saveLine(this);"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><form><input type="text"/></form></td>
+                    <td><form><input type="text"/></form></td>
+                    <td><form><input type="text"/></form></td>
+                    <td></td>
+                    <td class="centered"><img src="plus.png" onClick="addLine(this);"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
